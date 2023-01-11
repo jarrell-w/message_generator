@@ -6,7 +6,7 @@ const quotes = [
   "You must take life the way it comes at you and make the best of it.",
   "There was another life that I might have had, but I am having this one.",
 ];
-
+const names = ["billy", "john", "jill", "jess", "james", "jack", "johan"];
 const grabRandomQuote = () => {
   const randomNum = Math.floor(Math.random() * 6);
   return quotes[randomNum];

@@ -8,12 +8,12 @@ const quotes = [
 ];
 const names = ["billy", "john", "jill", "jess", "james", "jack", "johan"];
 const grabRandomQuote = () => {
-  const randomNum = Math.floor(Math.random() * 6);
-  return quotes[randomNum];
+  const randomQuote = Math.floor(Math.random() * 6);
+  return quotes[randomQuote];
 };
-const name = Math.floor(Math.random() * 7);
+const randomName = Math.floor(Math.random() * 7);
 
-const getQuote = (name) => {
+const getQuote = (name = names[randomName]) => {
   return `Hello ${name}, your random quote is: \n${grabRandomQuote()}`;
 };
 

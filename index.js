@@ -6,3 +6,12 @@ const quotes = [
   "You must take life the way it comes at you and make the best of it.",
   "There was another life that I might have had, but I am having this one.",
 ];
+
+const grabRandomQuote = () => {
+  const randomNum = Math.floor(Math.random() * 6);
+  return quotes[randomNum];
+};
+
+const getQuote = (name) => {
+  return `Hello ${name}, your random quote is: \n${grabRandomQuote}`;
+};

@@ -11,9 +11,10 @@ const grabRandomQuote = () => {
   const randomNum = Math.floor(Math.random() * 6);
   return quotes[randomNum];
 };
+const name = Math.floor(Math.random() * 7);
 
 const getQuote = (name) => {
   return `Hello ${name}, your random quote is: \n${grabRandomQuote()}`;
 };
 
-console.log(getQuote("jarrell"));
+console.log(getQuote());

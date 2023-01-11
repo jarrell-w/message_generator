@@ -13,5 +13,7 @@ const grabRandomQuote = () => {
 };
 
 const getQuote = (name) => {
-  return `Hello ${name}, your random quote is: \n${grabRandomQuote}`;
+  return `Hello ${name}, your random quote is: \n${grabRandomQuote()}`;
 };
+
+console.log(getQuote("jarrell"));
